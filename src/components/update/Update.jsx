@@ -1,4 +1,5 @@
-import { useState } from "react";
+
+import React, { useState } from "react";
 import { makeRequest } from "../../axios";
 import "./update.scss";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
@@ -41,7 +42,7 @@ const Update = ({ setOpenUpdate, user }) => {
       onSuccess: () => {
         // Invalidate and refetch
         queryClient.invalidateQueries(["user"]);
-      },
+      }
     }
   );
 
@@ -150,6 +151,7 @@ const Update = ({ setOpenUpdate, user }) => {
       </div>
     </div>
   );
+};
 };
 
 export default Update;

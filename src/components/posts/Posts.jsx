@@ -2,6 +2,7 @@ import Post from "../post/Post";
 import "./posts.scss";
 import { useQuery } from "@tanstack/react-query";
 import { makeRequest } from "../../axios";
+import React from 'react';
 
 const Posts = ({userId}) => {
   const { isLoading, error, data } = useQuery(["posts"], () =>

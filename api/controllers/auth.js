@@ -1,4 +1,4 @@
-import { db } from "../connect.js";
+ import { db } from "../connect.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
@@ -39,10 +39,13 @@ export const login = (req, res) => {
     if (err) return res.status(500).json(err);
     if (data.length === 0) return res.status(404).json("User not found!");
 
-    const checkPassword = bcrypt.compareSync(
-      req.body.password,
-      data[0].password
-    );
+    console.log("req.body.password:", req.body.password);
+    console.log("data[0].password:", data[0].password);
+
+    const checkPassword = bcrypt.compareSync(req.body.password, data[0].password);
+
+    console.log("Password match:", checkPassword);
+
 
     if (!checkPassword)
       return res.status(400).json("Wrong password or username!");

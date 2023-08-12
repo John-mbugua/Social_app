@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import "./login.scss";
+import React from 'react';
 
 const Login = () => {
   const [inputs, setInputs] = useState({
@@ -31,13 +32,12 @@ const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hello World.</h1>
+          <h1>Wai Social</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+            Welcome to Wai Social app we give you a chance to interact with friends all over the World at anytime anyday.
+            We are Wai because we answer Why.
           </p>
-          <span>Don't you have an account?</span>
+          <span>Don't have an account?</span>
           <Link to="/register">
             <button>Register</button>
           </Link>

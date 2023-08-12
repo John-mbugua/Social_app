@@ -1,6 +1,8 @@
 import { db } from "../connect.js";
 import jwt from "jsonwebtoken";
 import moment from "moment";
+import React from 'react';
+
 
 export const getPosts = (req, res) => {
   const userId = req.query.userId;

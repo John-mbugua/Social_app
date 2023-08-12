@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./register.scss";
 import axios from "axios";
+import React from 'react';
 
 const Register = () => {
   const [inputs, setInputs] = useState({
@@ -25,6 +26,7 @@ const Register = () => {
       setErr(err.response.data);
     }
   };
+  
 
   console.log(err)
 
@@ -32,11 +34,10 @@ const Register = () => {
     <div className="register">
       <div className="card">
         <div className="left">
-          <h1>Lama Social.</h1>
+          <h1>Wai Social.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+          Welcome to Wai Social app we give you a chance to interact with friends all over the World at Anytime anydeI(WAI).
+          We are Wai because we answer Why.
           </p>
           <span>Do you have an account?</span>
           <Link to="/login">

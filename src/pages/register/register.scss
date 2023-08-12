@@ -1,6 +1,6 @@
 .register {
   height: 100vh;
-  background-color: rgb(193, 190, 255);
+  background-color: rgb(175, 232, 241);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,8 +16,8 @@
 
     .left {
       flex: 1;
-      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
-        url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600")
+      background: linear-gradient(rgba(18, 168, 206, 0.5), rgba(16, 120, 128, 0.5)),
+        url("https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=1600")
           center;
       background-size: cover;
       padding: 50px;

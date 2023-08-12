@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../context/authContext";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { makeRequest } from "../../axios";
+import React from 'react';
 const Share = () => {
   const [file, setFile] = useState(null);
   const [desc, setDesc] = useState("");

@@ -16,6 +16,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
 import Update from "../../components/update/Update";
 import { useState } from "react";
+import React from 'react';
 
 const Profile = () => {
   const [openUpdate, setOpenUpdate] = useState(false);
